@@ -7,13 +7,25 @@ def dead():
     print("Better luck next time.")
     exit(0)
 
+# Character name requirements
+
+def char_name(name):
+    if len(name) < 3:
+        print("Invalid input. Character name needs to be 3 or more characters.")
+
+
 print("Welcome to the Practice Text game of 2022!")
 print("Let's make your text based character.")
 print(" ")
 
-player_Fname = input("Enter your characters First Name: ")
-player_Lname = input("Now enter your characters Last Name: ")
-print("Nice to meet you", player_Fname, "", player_Lname)
+def create_character():
+    char_name(input("Enter your characters name: "))
+        if char_name = True:
+            start()
+        elif char_name = False:
+            create_character()
+
+print("Nice to meet you " + str(char_name_req))
 
 def start():
     print("Welcome to the text based Adventure game! This is an early Alpha ;)")
@@ -30,5 +42,6 @@ def start():
         dead()
     else:
         error()
+
 
 start()
