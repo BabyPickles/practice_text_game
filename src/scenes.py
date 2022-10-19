@@ -1,6 +1,5 @@
 # Scenes of the world
 
-
 def introScene():
   directions = ["left","right","forward"]
   print("You are at a crossroads, and you can choose to go down any of the four hallways. Where would you like to go?")
